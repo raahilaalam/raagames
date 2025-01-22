@@ -6,6 +6,17 @@
     <title>Embedded Minecraft Game</title>
 </head>
 <body>
-    <iframe src="https://fungamesnow.github.io/minecraft-js/index.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+    <div id="minecraft-container" style="width:100%; height:600px;"></div>
+
+    <script>
+        const container = document.getElementById('minecraft-container');
+        const iframe = document.createElement('iframe');
+        iframe.src = "https://fungamesnow.github.io/minecraft-js/index.html";
+        iframe.width = "100%";
+        iframe.height = "100%";
+        iframe.frameBorder = "0";
+        iframe.allowFullscreen = true;
+        container.appendChild(iframe);
+    </script>
 </body>
 </html>
