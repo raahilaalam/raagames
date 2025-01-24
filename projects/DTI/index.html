@@ -9,36 +9,24 @@
 <body>
     <header>
         <h1>Dress to Impress</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#game">Game</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section id="home">
-            <h2>Welcome to Dress to Impress</h2>
-            <p>Create your own stylish outfits and impress everyone on the runway!</p>
-        </section>
         <section id="game">
-            <h2>Game</h2>
-            <div id="game-container"></div>
-            <button id="start-game">Start Game</button>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or suggestions, feel free to reach out!</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <h2>Dress Up Your Character</h2>
+            <div id="character">
+                <img id="base" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAcAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Base Character">
+                <img id="outfit" src="" alt="Outfit">
+            </div>
+            <div id="character-selector">
+                <button onclick="selectCharacter('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAcAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')">Male</button>
+                <button onclick="selectCharacter('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAcAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')">Female</button>
+            </div>
+            <div id="clothing-options">
+                <button onclick="dressCharacter('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAcAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')">Male Outfit 1</button>
+                <button onclick="dressCharacter('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAcAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')">Male Outfit 2</button>
+                <button onclick="dressCharacter('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAcAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')">Female Outfit 1</button>
+                <button onclick="dressCharacter('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAcAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')">Female Outfit 2</button>
+            </div>
         </section>
     </main>
     <footer>
@@ -47,4 +35,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
