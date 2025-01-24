@@ -1,4 +1,8 @@
-document.getElementById('start-game').addEventListener('click', function() {
-    const gameContainer = document.getElementById('game-container');
-    gameContainer.innerHTML = '<p>Game started! Time to create stylish outfits and impress everyone!</p>';
-});
+function selectCharacter(base) {
+    document.getElementById('base').src = base;
+    document.getElementById('outfit').src = '';
+}
+
+function dressCharacter(outfit) {
+    document.getElementById('outfit').src = outfit;
+}
