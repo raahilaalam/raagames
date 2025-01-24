@@ -16,69 +16,27 @@ header h1 {
     color: #ADD8E6; /* Light blue title */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #c9c9c9; /* Light gray links */
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #ADD8E6; /* Light blue on hover */
-}
-
 main {
     padding: 20px;
+    text-align: center;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-section img {
-    width: 100%;
-    height: auto;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-form button {
-    background-color: #0000ff; /* Blue button */
-    color: #c9c9c9; /* Light gray button text */
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #ADD8E6; /* Light blue on hover */
-}
-
-#game-container {
-    width: 100%;
+#character {
+    position: relative;
+    width: 200px;
     height: 400px;
-    background-color: #ADD8E6; /* Light blue game area */
-    border: 2px solid #0000ff; /* Blue border */
+    margin: 0 auto;
 }
 
-#start-game {
-    margin-top: 20px;
+#character img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#character-selector button,
+#clothing-options button {
+    margin: 10px;
     padding: 10px 20px;
     background-color: #0000ff;
     color: #c9c9c9;
@@ -86,7 +44,8 @@ form button:hover {
     cursor: pointer;
 }
 
-#start-game:hover {
+#character-selector button:hover,
+#clothing-options button:hover {
     background-color: #ADD8E6;
     color: #0000ff;
 }
