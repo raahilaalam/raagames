@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(circle at center, #00C6FF, #005FFF);
+  background: radial-gradient(circle at center, #00C6FF, #FFA500);
   background-size: 400% 400%;
   animation: swirl 10s linear infinite;
 }
