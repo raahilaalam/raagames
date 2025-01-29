@@ -1,0 +1,14 @@
+body {
+  background: radial-gradient(circle at center, #00C6FF, #005FFF);
+  background-size: 400% 400%;
+  animation: swirl 10s linear infinite;
+}
+
+@keyframes swirl {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300% 300%;
+  }
+}
